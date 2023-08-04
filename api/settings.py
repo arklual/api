@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-bcql=zzeq&$t0+4t&oxgh_+a^fp3mhiu+p*)8-a5qorlor5rij
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+ALLOWED_TOKENS = [
+    '123456789'
+]
 
 
 # Application definition
@@ -39,8 +42,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'subjects',
     'homeworks',
-    'notes'
+    'notes',
+    'accounts'
 ]
+
+AUTH_USER_MODEL = 'accounts.Account'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -108,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 

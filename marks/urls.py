@@ -3,5 +3,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('marks/', views.get_marks),
+    path('marks/', views.GetMarks.as_view()),
 ]

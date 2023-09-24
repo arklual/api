@@ -27,6 +27,7 @@ class Account(View):
             'telegram_id': user.telegram_id,
             'username': user.username,
             'is_admin': user.is_admin,
-            'class': user.school_class
+            'class': user.school_class,
+            'first_name': user.first_name
         }
         return JsonResponse(data, safe=False, json_dumps_params={'ensure_ascii': False})

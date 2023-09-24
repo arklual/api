@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'homeworks',
     'notes',
     'accounts',
-    'marks'
+    'marks',
+    'testworks'
 ]
 
 AUTH_USER_MODEL = 'accounts.Account'

@@ -8,4 +8,4 @@ class Testwork(models.Model):
     type = models.CharField('Тип работы', max_length=50)
 
     def __str__(self) -> str:
-        return self.subject +' '+str(self.date)
+        return self.subject.name +' '+str(self.date)
